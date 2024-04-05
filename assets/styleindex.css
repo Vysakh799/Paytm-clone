@@ -2,29 +2,67 @@ body{
     background-color: rgb(31, 28, 28);
     margin: 0px;
 }
+.split_content{
+    display: flex
+}
+.navbar{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    grid-template-areas: "right-side center left-side";
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(31, 28, 28);
+}
 .container{
     display: grid;
-    background-color: white;
+    background-color: rgb(31, 28, 28);
     margin: auto;
     width: 100%;
     height: 950px;
-    grid-template-areas:"navbar navbar navbar navbar navbar navbar navbar"
-                        "sidepanel varea varea varea varea varea varea"
-                        "sidepanel varea varea varea varea varea varea"
-                        "sidepanel varea varea varea varea varea varea"
-                        "sidepanel varea varea varea varea varea varea";
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
-}
-.navbar{
-    grid-area: navbar;
-    text-align: center;
-    background-color: blue;
+    grid-template-areas:"varea varea varea varea varea varea"
+                        "varea varea varea varea varea varea"
+                        "varea varea varea varea varea varea"
+                        "varea varea varea varea varea varea";
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+    color: white;
 }
 .sidepanel{
-    grid-area: sidepanel;
-    background-color: red;
+    /* grid-area: sidepanel; */
+    background-color:rgb(31, 28, 28);
+    width: 150px;
+    padding-left: 15px;
 }
 .varea{
     grid-area: varea;
+}
+.icons{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    height: 25px;
+}
+.icons p{
+    margin-left: 10px;
+}
+.left-side{
+    display: flex;
+    padding:0px 0 0 15px ;
+    align-items: center;
+    color: white;
+}
+.left-side img{
+    height: 14px;
+    width: 65px;
+    margin-left: 10px;
+}
+.left-side .icons{
+    font-size: 18px;
+}
+.left-side p{
+    margin-top: -10px;
+    font-size: 6px;
+    font-weight: 100;
 }
