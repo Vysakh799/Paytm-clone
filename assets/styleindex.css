@@ -32,7 +32,7 @@ body{
     /* grid-area: sidepanel; */
     background-color:rgb(31, 28, 28);
     width: 150px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 .varea{
     grid-area: varea;
@@ -42,7 +42,7 @@ body{
     display: flex;
     align-items: center;
     font-size: 12px;
-    height: 25px;
+    height: 30px;
 }
 .icons p{
     margin-left: 10px;
@@ -66,3 +66,13 @@ body{
     font-size: 6px;
     font-weight: 100;
 }
+.main,.you,.subs,.explore{
+    /* background-color: teal; */
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.273);
+    padding-left: 15px;
+}
+.subimg img{
+    height: 20px;
+    border-radius: 50px;
+}
+
