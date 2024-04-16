@@ -7,12 +7,50 @@ body{
 }
 .navbar{
     display: grid;
-    margin: auto;
     width: 100%;
     height: 50px;
+    margin-top: px;
     grid-template-areas: "right-side center left-side";
     grid-template-columns: 1fr 2fr 1fr;
     background-color: rgb(31, 28, 28);
+}
+.center,.searchbar{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v_area{
+    padding: 15px;
+}
+.v_area img{
+    height: 150px;
+    border-radius: 10px;
+}
+.box{
+    width: 65%;
+    height: 22px;
+    border-radius: 25px;
+    border: 1px solid rgb(60, 59, 59);
+    background-color: rgb(31, 28, 28);
+}
+.searchbar i{
+    position: relative;
+    right: 28px;
+    color: white;
+    font-size: 12px;
+    /* background-color: red; */
+}
+.right-side{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color:white;
+    font-size: 15px;
+}
+.right-side div{
+    margin-left: 15px;
 }
 .container{
     display: grid;
@@ -31,7 +69,7 @@ body{
 .sidepanel{
     /* grid-area: sidepanel; */
     background-color:rgb(31, 28, 28);
-    width: 150px;
+    width: 180px;
     /* padding-left: 15px; */
 }
 .varea{
@@ -66,7 +104,7 @@ body{
     font-size: 6px;
     font-weight: 100;
 }
-.main,.you,.subs,.explore{
+.main,.you,.subs,.explore,.morefrom,.help{
     /* background-color: teal; */
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.273);
     padding-left: 15px;
