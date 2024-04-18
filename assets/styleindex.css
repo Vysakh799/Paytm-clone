@@ -170,14 +170,13 @@ body{
 }
 @media (max-width:1200px) {
     .container{
-        grid-template-areas:"varea varea varea"
-                        "varea varea varea "
-                        "varea varea varea "
-                        "varea varea varea "
-                        "varea varea varea "
-                        "varea varea varea";
-        grid-template-columns:1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:"varea varea varea varea"
+                        "varea varea varea varea"
+                        "varea varea varea varea"
+                        "varea varea varea varea"
+                        "varea varea varea varea"
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
     .v_area img{
         height: 200px;
