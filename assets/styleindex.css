@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     background-color: rgb(31, 28, 28);
     margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .split_content{
     display: flex
@@ -21,11 +25,15 @@ body{
     align-items: center;
 }
 .v_area{
-    padding: 20px 0px 0px 20px;
+    padding:10px
 }
 .v_area img{
-    height: 130px;
+    height: 150px;
+    width: 100%;
     border-radius: 10px;
+}
+.description img{
+    width: 12%;
 }
 .box{
     width: 65%;
@@ -33,6 +41,7 @@ body{
     border-radius: 25px;
     border: 1px solid rgb(60, 59, 59);
     background-color: rgb(31, 28, 28);
+    color: white;
 }
 .searchbar i{
     position: relative;
@@ -55,8 +64,8 @@ body{
 .container{
     display: grid;
     background-color: rgb(31, 28, 28);
-    width: 100%;
-    /* height: 950px; */
+    width: 1500px;
+    height: 770px;
     grid-template-areas:"varea varea varea varea varea"
                         "varea varea varea varea varea"
                         "varea varea varea varea varea"
@@ -64,16 +73,39 @@ body{
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     color: white;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .sidepanel{
     /* grid-area: sidepanel; */
     /* background-color:rgb(31, 28, 28); */
     /* background-color: red; */
-    width: 190px;
-    /* height: 725px; */
-    /* padding-left: 15px; */
-    /* overflow-y: scroll; */
+    width: 180px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 810px;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: rgb(31, 28, 28); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(31, 28, 28); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b7b7b7; 
+  }
 .varea{
     grid-area: varea;
 }
@@ -86,6 +118,12 @@ body{
 }
 .icons p{
     margin-left: 10px;
+}
+/* .sidepanel-item{
+    border-radius: 25px;
+} */
+.sidepanel-item  :hover{
+    background-color: rgb(52, 48, 48);
 }
 .left-side{
     display: flex;
@@ -119,7 +157,7 @@ body{
     background-color: rgb(43, 42, 42);
     padding: 3px 5px 5px 5px;
     width: fit-content;
-    font-size: 13px;
+    font-size: 11px;
     border-radius: 5px;
     height: 12px;
     color: white;
@@ -128,4 +166,20 @@ body{
     display: flex;
     /* background-color: red; */
     justify-content: space-evenly;
+    width: 1500px;
+}
+@media (max-width:1200px) {
+    .container{
+        grid-template-areas:"varea varea varea"
+                        "varea varea varea "
+                        "varea varea varea "
+                        "varea varea varea "
+                        "varea varea varea "
+                        "varea varea varea";
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .v_area img{
+        height: 200px;
+    }
 }
