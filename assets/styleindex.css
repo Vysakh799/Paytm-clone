@@ -119,9 +119,9 @@ body{
 .icons p{
     margin-left: 10px;
 }
-/* .sidepanel-item{
+ .sidepanel-item{
     border-radius: 25px;
-} */
+}
 .sidepanel-item  :hover{
     background-color: rgb(52, 48, 48);
 }
