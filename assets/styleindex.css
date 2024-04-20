@@ -158,20 +158,24 @@ body{
 .navbar2item{
     background-color: rgb(43, 42, 42);
     padding: 3px 5px 5px 5px;
-    width: fit-content;
+    /* width: fit-content; */
     font-size: 11px;
     border-radius: 5px;
     height: 12px;
     color: white;
+    margin-left: 20px;
 }
 .navbar2{
     display: flex;
     /* background-color: red; */
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     width: 100%;
-    position: relative;
+    /* margin-left: 20px; */
+    /* position: relative; */
     margin-top: 50px;
+    /* overflow-x: hidden; */
 }
+
 @media (max-width:1200px) {
     .container{
         grid-template-areas:"varea varea varea"
@@ -192,6 +196,7 @@ body{
     .sidepanel{
         display: none;
     }
+ 
 }
 @media (max-width:1150px){
     .navbar2{
